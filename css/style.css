@@ -238,3 +238,45 @@ body {
 .whatsapp-btn:hover {
     transform: scale(1.1);
 }
+/* Mobile pequeño (≤ 480px) */
+@media (max-width: 480px) {
+ 
+  .brand-header {
+    font-size: 1.8rem;
+  }
+ 
+  main h2 {
+    font-size: 1.2rem;
+  }
+ 
+  .gallery li {
+    padding: 5px;
+  }
+ 
+  .gallery li .box h3 {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+ 
+  .gallery li .box p {
+    font-size: 1.2rem;
+  }
+ 
+  .gallery li .box .button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+ 
+  .footer-nav ul li a {
+    font-size: 0.85rem;
+  }
+ 
+  .footer-copyright {
+    font-size: 0.75rem;
+  }
+ 
+}
+
+html {
+  scroll-behavior: smooth;
+}

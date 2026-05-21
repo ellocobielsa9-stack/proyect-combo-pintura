@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-     <title>Combo Pintura</title>
+    <title>Combo Pintura</title>
 
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -18,12 +18,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-        <link rel="icon" type="image/png" href="img/logo-original.png" />
+    <link rel="icon" type="image/png" href="img/logo-original.png" />
 
 
     <script
         id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary-container": "#444647", "surface-tint": "#006496", "on-primary-container": "#5fbcff", "on-error-container": "#93000a", "on-primary-fixed": "#001e31", secondary: "#904d00", "primary-container": "#004a71", "error-container": "#ffdad6", "outline-variant": "#bfc8c6", outline: "#707977", "surface-dim": "#d1dbec", "on-tertiary-fixed": "#191c1d", "secondary-fixed-dim": "#ffb77d", "surface-variant": "#d9e3f4", "tertiary-fixed": "#e1e3e4", "inverse-on-surface": "#eaf1ff", "surface-container-highest": "#d9e3f4", "secondary-fixed": "#ffdcc3", "on-tertiary-container": "#b2b4b5", "on-secondary-fixed-variant": "#6e3900", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#454748", "on-secondary-fixed": "#2f1500", "on-error": "#ffffff", "on-background": "#121c28", "surface-container-low": "#eef4ff", "surface-container-lowest": "#ffffff", error: "#ba1a1a", "on-surface-variant": "#404847", "tertiary-fixed-dim": "#c5c7c8", "on-secondary": "#ffffff", "surface-container-high": "#dfe9fa", "on-primary-fixed-variant": "#004b72", "inverse-primary": "#90cdff", "on-tertiary": "#ffffff", "surface-bright": "#f8f9ff", "primary-fixed": "#cce5ff", "on-surface": "#121c28", "primary-fixed-dim": "#90cdff", background: "#f8f9ff", tertiary: "#2d3031", primary: "#00334f", "surface-container": "#e5eeff", "inverse-surface": "#27313e", "on-secondary-container": "#663500", "secondary-container": "#fe932c", surface: "#f8f9ff" }, borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }, spacing: { sm: "16px", gutter: "24px", xl: "80px", base: "4px", margin: "32px", md: "24px", xs: "8px", lg: "48px" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "label-caps": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], h2: ["Epilogue"], h3: ["Epilogue"], h1: ["Epilogue"] }, fontSize: { "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }], "label-caps": ["12px", { lineHeight: "1.4", letterSpacing: "0.05em", fontWeight: "700" }], "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }], h2: ["36px", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "600" }], h3: ["24px", { lineHeight: "1.3", fontWeight: "600" }], h1: ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700" }] } } } };</script>
-    
+
 </head>
 
 <body
@@ -32,14 +32,15 @@
     <nav
         class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm transition-all duration-300 ease-in-out">
         <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
-            <div class="text-2xl font-bold tracking-tighter text-teal-900"><img src="img/logo-original.webp" alt="logo de combo pintura"></div>
+            <div class="text-2xl font-bold tracking-tighter text-teal-900"><img src="img/logo-original.webp"
+                    alt="logo de combo pintura"></div>
             <div class="hidden md:flex items-center gap-xs">
-                <a class="px-4 py-2 font-epilogue text-sm font-medium tracking-tight text-teal-900 border-b-2 border-teal-900 pb-1"
+                <a id="nav-pinturas" class="px-4 py-2 font-epilogue text-sm font-medium tracking-tight text-teal-900 border-b-2 border-teal-900 pb-1"
                     href="#">Pinturas</a>
-                <a class="px-4 py-2 font-epilogue text-sm font-medium tracking-tight text-gray-600 hover:text-teal-900 hover:bg-gray-50 rounded-md transition-all"
+                <a id="nav-accesorios" class="px-4 py-2 font-epilogue text-sm font-medium tracking-tight text-gray-600 hover:text-teal-900 hover:bg-gray-50 rounded-md transition-all"
                     href="#">Accesorios</a>
 
-                <a class="px-4 py-2 font-epilogue text-sm font-medium tracking-tight text-gray-600 hover:text-teal-900 hover:bg-gray-50 rounded-md transition-all"
+                <a id="nav-mas" class="px-4 py-2 font-epilogue text-sm font-medium tracking-tight text-gray-600 hover:text-teal-900 hover:bg-gray-50 rounded-md transition-all"
                     href="#">Mas</a>
             </div>
             <div class="flex items-center gap-sm">
@@ -71,11 +72,12 @@
                     <p class="font-body-lg text-body-lg text-white/90 mb-md">Descubre la precisión arquitectónica y la
                         calidez de nuestras paletas exclusivas, diseñadas para elevar cada espacio de tu vida.</p>
                     <div class="flex gap-sm">
-                        <button
+                        <button id="btn-explorar"
                             class="px-lg py-sm bg-secondary-container text-on-secondary-container font-semibold rounded-lg hover:shadow-lg transition-all active:scale-95">
                             Explorar Colección
                         </button>
-                        <button
+
+                        <button id="btn-color"
                             class="px-lg py-sm bg-white/10 text-white border border-white/30 backdrop-blur-sm font-semibold rounded-lg hover:bg-white/20 transition-all">
                             Herramientas de Color
                         </button>
@@ -113,7 +115,7 @@
         </div>
     </section>
     <!-- Product Catalog -->
-    <section class="py-xl bg-surface-container-lowest">
+    <section id="catalogo" class="py-xl bg-surface-container-lowest">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-lg gap-sm">
                 <div>
@@ -121,19 +123,21 @@
                     <h2 class="font-h2 text-h2 text-primary mt-base">Productos Destacados</h2>
                 </div>
                 <div class="flex gap-xs">
-                    <span
-                        class="px-4 py-2 bg-primary text-white rounded-full text-sm font-medium cursor-pointer">Todo</span>
-                    <span
-                        class="px-4 py-2 bg-white border border-outline-variant text-on-surface-variant rounded-full text-sm font-medium cursor-pointer hover:bg-surface-container transition-colors">Pinturas</span>
-                    <span
-                        class="px-4 py-2 bg-white border border-outline-variant text-on-surface-variant rounded-full text-sm font-medium cursor-pointer hover:bg-surface-container transition-colors">Accesorios</span>
+                    <span data-filtro="todo"
+                        class="filtro-btn px-4 py-2 bg-primary text-white rounded-full text-sm font-medium cursor-pointer">Todo</span>
+
+                    <span data-filtro="pintura"
+                        class="filtro-btn px-4 py-2 bg-white border border-outline-variant text-on-surface-variant rounded-full text-sm font-medium cursor-pointer">Pinturas</span>
+
+                    <span data-filtro="accesorio"
+                        class="filtro-btn px-4 py-2 bg-white border border-outline-variant text-on-surface-variant rounded-full text-sm font-medium cursor-pointer">Accesorios</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter">
                 <!-- Product 1 -->
                 <div
-                    class="group bg-white rounded-xl overflow-hidden border border-gray-100 card-shadow card-shadow-hover transition-all duration-300">
-                    <div class="aspect-square relative overflow-hidden bg-gray-50">
+                    class="group bg-white rounded-xl overflow-hidden border border-gray-100 card-shadow card-shadow-hover transition-all duration-300" data-categoria="pintura">
+                    <div class="aspect-square relative overflow-hidden bg-gray-50" >
                         <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             data-alt="A professional studio shot of a sleek white paint bucket with a minimalist teal label featuring the Lumina Paints logo. The bucket sits on a clean gray surface with soft studio lighting that creates elegant highlights. The overall aesthetic is high-end, clean, and modern, fitting a premium paint brand's identity with a soft teal color palette."
                             src="img/Latex-blanco-dolce.jpeg" />
@@ -144,29 +148,31 @@
                     </div>
                     <div class="p-md">
                         <h4 class="font-h3 text-[20px] text-primary mb-1">Látex blanco dolce</h4>
-                        <p class="text-sm text-on-surface-variant mb-md">calidad premium que le brindan un acabado de extraordinario poder cubritivo.</p>
+                        <p class="text-sm text-on-surface-variant mb-md">calidad premium que le brindan un acabado de
+                            extraordinario poder cubritivo.</p>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-xl font-bold text-primary">$76000</span>
-                        <button
+                            <button
                                 class="flex items-center justify-center p-2 bg-primary text-white rounded-lg hover:bg-primary-container transition-colors add-to-cart flex items-center justify-center p-2 bg-primary text-white rounded-lg">
                                 <span class="material-symbols-outlined">add_shopping_cart</span>
                             </button>
-                             
-                           
+
+
                         </div>
                     </div>
                 </div>
                 <!-- Product 2 -->
                 <div
-                    class="group bg-white rounded-xl overflow-hidden border border-gray-100 card-shadow card-shadow-hover transition-all duration-300">
-                    <div class="aspect-square relative overflow-hidden bg-gray-50">
+                    class="group bg-white rounded-xl overflow-hidden border border-gray-100 card-shadow card-shadow-hover transition-all duration-300" data-categoria="accesorio">
+                    <div class="aspect-square relative overflow-hidden bg-gray-50" >
                         <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             data-alt="A professional set of paint brushes with natural bristles and ergonomic wooden handles, arranged artistically on a clean white table. Soft morning light casts gentle shadows, emphasizing the fine quality of the bristles and the craftsmanship of the tools. The image reflects a professional, artistic, and premium domesticity vibe consistent with architectural design standards."
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuC16flfY3OgwgYcXT0Pva2gmioNqptdyYpGkrbJMI_ESpa62Fq8Cg0Eoj34dsTARQEwZrcSb6sMn5-WrLyIA7R4AGlP0tNOkYZpIQ0VCiAfN4FicTPGi-7iXIRzfO5sY54YbLL1OEPcLB1aVtIXFTd_4PIu-wNq8FwO1zGnl_dShvHCVfZyS8hznQyM1XX310AyY83G_dbZ8n_S1LazeVhusc77GFV_L9zxFBOB9x1qXudu70IZ4ZSjGtxL5MSir6RhiQm-sa-lEwQ" />
                     </div>
                     <div class="p-md">
                         <h4 class="font-h3 text-[20px] text-primary mb-1">Pincel</h4>
-                        <p class="text-sm text-on-surface-variant mb-md">cerdas sintéticas naturales, mango ergonómico y virola de acero inoxidable para mayor durabilidad.</p>
+                        <p class="text-sm text-on-surface-variant mb-md">cerdas sintéticas naturales, mango ergonómico y
+                            virola de acero inoxidable para mayor durabilidad.</p>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-xl font-bold text-primary">$3.200</span>
                             <button
@@ -178,18 +184,19 @@
                 </div>
                 <!-- Product 3 -->
                 <div
-                    class="group bg-white rounded-xl overflow-hidden border border-gray-100 card-shadow card-shadow-hover transition-all duration-300">
-                    <div class="aspect-square relative overflow-hidden bg-gray-50">
+                    class="group bg-white rounded-xl overflow-hidden border border-gray-100 card-shadow card-shadow-hover transition-all duration-300 " data-categoria="pintura">
+                    <div class="aspect-square relative overflow-hidden bg-gray-50" >
                         <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             data-alt="A large bucket of premium textured plaster in a warm terracotta shade, positioned in a modern industrial setting with concrete walls and soft spot lighting. The texture of the wet plaster is slightly visible around the rim, suggesting high quality and artisanal craftsmanship. The scene is clean, aspirational, and high-contrast, highlighting the rich color and professional utility."
                             src="img/Membrana-con-caucho.jpeg" />
                     </div>
                     <div class="p-md">
                         <h4 class="font-h3 text-[20px] text-primary mb-1">membrana con caucho</h4>
-                        <p class="text-sm text-on-surface-variant mb-md">Impermeabilizante de alto espesor,ecologico y de maxima durabilidad.</p>
+                        <p class="text-sm text-on-surface-variant mb-md">Impermeabilizante de alto espesor,ecologico y
+                            de maxima durabilidad.</p>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-xl font-bold text-primary">$75000</span>
-                           <button
+                            <button
                                 class="flex items-center justify-center p-2 bg-primary text-white rounded-lg hover:bg-primary-container transition-colors add-to-cart flex items-center justify-center p-2 bg-primary text-white rounded-lg">
                                 <span class="material-symbols-outlined">add_shopping_cart</span>
                             </button>
@@ -198,18 +205,19 @@
                 </div>
                 <!-- Product 4 -->
                 <div
-                    class="group bg-white rounded-xl overflow-hidden border border-gray-100 card-shadow card-shadow-hover transition-all duration-300">
-                    <div class="aspect-square relative overflow-hidden bg-gray-50">
+                    class="group bg-white rounded-xl overflow-hidden border border-gray-100 card-shadow card-shadow-hover transition-all duration-300" data-categoria="accesorio">
+                    <div class="aspect-square relative overflow-hidden bg-gray-50" >
                         <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             data-alt="A professional painting kit including a high-quality roller with a micro-fiber sleeve, a paint tray, and painter's tape, all neatly laid out on a drop cloth. The lighting is bright and airy, typical of a high-end home renovation project. The tools are clean and presented as essential instruments for a professional-grade interior design transformation in a modern light-mode style."
                             src="img/balde.png" />
                     </div>
                     <div class="p-md">
                         <h4 class="font-h3 text-[20px] text-primary mb-1">Balde</h4>
-                        <p class="text-sm text-on-surface-variant mb-md">herramienta indispensable de plástico resistente, diseñada para mezclar, transportar y aplicar pintura eficientemente.</p>
+                        <p class="text-sm text-on-surface-variant mb-md">herramienta indispensable de plástico
+                            resistente, diseñada para mezclar, transportar y aplicar pintura eficientemente.</p>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-xl font-bold text-primary">$8.600</span>
-                           <button
+                            <button
                                 class="flex items-center justify-center p-2 bg-primary text-white rounded-lg hover:bg-primary-container transition-colors add-to-cart flex items-center justify-center p-2 bg-primary text-white rounded-lg">
                                 <span class="material-symbols-outlined">add_shopping_cart</span>
                             </button>
@@ -218,15 +226,16 @@
                 </div>
                 <!-- Product 5 -->
                 <div
-                    class="group bg-white rounded-xl overflow-hidden border border-gray-100 card-shadow card-shadow-hover transition-all duration-300">
-                    <div class="aspect-square relative overflow-hidden bg-gray-50">
+                    class="group bg-white rounded-xl overflow-hidden border border-gray-100 card-shadow card-shadow-hover transition-all duration-300" data-categoria="pintura">
+                    <div class="aspect-square relative overflow-hidden bg-gray-50" >
                         <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             data-alt="A focused close-up of a satin-finish paint can being opened, revealing a smooth, creamy light grey paint inside. The metallic reflection of the can is crisp and professional, set against a blurred background of a modern renovation site. The mood is one of fresh beginnings and high-quality craftsmanship, emphasizing the tactile nature of premium architectural paints."
                             src="img/Latex-blaco-forza.jpeg" />
                     </div>
                     <div class="p-md">
                         <h4 class="font-h3 text-[20px] text-primary mb-1">Latex blanco forza</h4>
-                        <p class="text-sm text-on-surface-variant mb-md">latex interior anti hongo para ambientes interiores, de facuil aplicacion y rapido secado.</p>
+                        <p class="text-sm text-on-surface-variant mb-md">latex interior anti hongo para ambientes
+                            interiores, de facuil aplicacion y rapido secado.</p>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-xl font-bold text-primary">$35000</span>
                             <button
@@ -238,8 +247,8 @@
                 </div>
                 <!-- Product 6 -->
                 <div
-                    class="group bg-white rounded-xl overflow-hidden border border-gray-100 card-shadow card-shadow-hover transition-all duration-300">
-                    <div class="aspect-square relative overflow-hidden bg-gray-50">
+                    class="group bg-white rounded-xl overflow-hidden border border-gray-100 card-shadow card-shadow-hover transition-all duration-300" data-categoria="pintura">
+                    <div class="aspect-square relative overflow-hidden bg-gray-50" >
                         <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             data-alt="A top-down view of several high-quality paint swatches in varying shades of deep teal, soft sand, and warm terracotta, arranged neatly next to a designer's sketches. The composition is clean and architectural, using generous whitespace. The lighting is soft and diffuse, highlighting the rich pigment and tactile sophistication of the physical paint samples in a professional design studio."
                             src="img/fijador (1).png" />
@@ -250,7 +259,7 @@
                             parejo.</p>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-xl font-bold text-primary">$3200</span>
-                           <button
+                            <button
                                 class="flex items-center justify-center p-2 bg-primary text-white rounded-lg hover:bg-primary-container transition-colors add-to-cart flex items-center justify-center p-2 bg-primary text-white rounded-lg">
                                 <span class="material-symbols-outlined">add_shopping_cart</span>
                             </button>
@@ -259,8 +268,8 @@
                 </div>
                 <!-- Product 7 -->
                 <div
-                    class="group bg-white rounded-xl overflow-hidden border border-gray-100 card-shadow card-shadow-hover transition-all duration-300">
-                    <div class="aspect-square relative overflow-hidden bg-gray-50">
+                    class="group bg-white rounded-xl overflow-hidden border border-gray-100 card-shadow card-shadow-hover transition-all duration-300" data-categoria="pintura">
+                    <div class="aspect-square relative overflow-hidden bg-gray-50" >
                         <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             data-alt="A minimalist paint bucket in a high-key studio environment. The label is a clean, modern design in deep teal against a pristine white background. A single elegant brush rests across the top of the closed lid, suggesting a ready-to-start renovation project. The overall feel is one of precision, quality, and modern architectural elegance."
                             src="img/barniz.jpg" />
@@ -280,35 +289,36 @@
                 </div>
                 <!-- Product 8 -->
                 <div
-                    class="group bg-white rounded-xl overflow-hidden border border-gray-100 card-shadow card-shadow-hover transition-all duration-300">
-                    <div class="aspect-square relative overflow-hidden bg-gray-50">
+                    class="group bg-white rounded-xl overflow-hidden border border-gray-100 card-shadow card-shadow-hover transition-all duration-300" data-categoria="accesorio">
+                    <div class="aspect-square relative overflow-hidden bg-gray-50" >
                         <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             data-alt="A close-up of premium painter's accessories including a gold-banded brush and high-density foam rollers. The items are perfectly clean and positioned on a light wooden surface. The aesthetic is sophisticated and domestic, highlighting the quality of tools that facilitate professional results for home improvement enthusiasts in a bright, modern setting."
                             src="img/rodillo.png" />
                     </div>
                     <div class="p-md">
                         <h4 class="font-h3 text-[20px] text-primary mb-1">rodillos</h4>
-                        <p class="text-sm text-on-surface-variant mb-md">varios tipos de rodillos para cubrir desde esquinas hasta
+                        <p class="text-sm text-on-surface-variant mb-md">varios tipos de rodillos para cubrir desde
+                            esquinas hasta
                             grandes muros.</p>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-xl font-bold text-primary">$6.400</span>
-                           <button
+                            <button
                                 class="flex items-center justify-center p-2 bg-primary text-white rounded-lg hover:bg-primary-container transition-colors add-to-cart flex items-center justify-center p-2 bg-primary text-white rounded-lg">
                                 <span class="material-symbols-outlined">add_shopping_cart</span>
                             </button>
+                        </div>
                     </div>
                 </div>
+                <div class="mt-lg text-center">
+                    <button
+                        class="px-lg py-sm border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all">
+                        Ver todos los productos
+                    </button>
+                </div>
             </div>
-            <div class="mt-lg text-center">
-                <button
-                    class="px-lg py-sm border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all">
-                    Ver todos los productos
-                </button>
-            </div>
-        </div>
     </section>
     <!-- Swatch Selector Section -->
-    <section class="py-xl bg-primary text-white overflow-hidden relative">
+    <section id="swatch" class="py-xl bg-primary text-white overflow-hidden relative">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-lg items-center">
                 <div>
@@ -317,32 +327,32 @@
                         táctil. Cada color está formulado para interactuar dinámicamente con la luz de tu hogar.</p>
                     <div class="grid grid-cols-4 sm:grid-cols-6 gap-sm">
                         <!-- Swatches -->
-                        <div
-                            class="aspect-square bg-[#003633] rounded-xl border-2 border-white cursor-pointer shadow-inner relative" data-image="img/verde-oscuro.jpg">
+                        <div class="aspect-square bg-[#003633] rounded-xl border-2 border-white cursor-pointer shadow-inner relative"
+                            data-image="img/verde-oscuro.jpg">
                             <div class="absolute inset-0 flex items-center justify-center"><span
                                     class="material-symbols-outlined text-white">check</span></div>
                         </div>
-                        <div
-                            class="aspect-square bg-[#904d00] rounded-xl border border-white/20 cursor-pointer shadow-inner hover:scale-105 transition-transform" data-image="img/terracota.png">
+                        <div class="aspect-square bg-[#904d00] rounded-xl border border-white/20 cursor-pointer shadow-inner hover:scale-105 transition-transform"
+                            data-image="img/terracota.png">
                         </div>
-                        <div
-                            class="aspect-square bg-[#316763] rounded-xl border border-white/20 cursor-pointer shadow-inner hover:scale-105 transition-transform" data-image="img/verde-menta.jpg">
+                        <div class="aspect-square bg-[#316763] rounded-xl border border-white/20 cursor-pointer shadow-inner hover:scale-105 transition-transform"
+                            data-image="img/verde-menta.jpg">
                         </div>
-                        <div
-                            class="aspect-square bg-[#444647] rounded-xl border border-white/20 cursor-pointer shadow-inner hover:scale-105 transition-transform" data-image="img/gris-carbon.jpg">
+                        <div class="aspect-square bg-[#444647] rounded-xl border border-white/20 cursor-pointer shadow-inner hover:scale-105 transition-transform"
+                            data-image="img/gris-carbon.jpg">
                         </div>
-                        <div
-                            class="aspect-square bg-[#ffb77d] rounded-xl border border-white/20 cursor-pointer shadow-inner hover:scale-105 transition-transform" data-image="img/melocoton.jpg">
-                        
+                        <div class="aspect-square bg-[#ffb77d] rounded-xl border border-white/20 cursor-pointer shadow-inner hover:scale-105 transition-transform"
+                            data-image="img/melocoton.jpg">
+
                         </div>
-                        <div
-                            class="aspect-square bg-[#d9e3f4] rounded-xl border border-white/20 cursor-pointer shadow-inner hover:scale-105 transition-transform" data-image="img/blanco-calido.png"> 
+                        <div class="aspect-square bg-[#d9e3f4] rounded-xl border border-white/20 cursor-pointer shadow-inner hover:scale-105 transition-transform"
+                            data-image="img/blanco-calido.png">
                         </div>
-                        <div
-                            class="aspect-square bg-[#9ad1cb] rounded-xl border border-white/20 cursor-pointer shadow-inner hover:scale-105 transition-transform" data-image="img/verde-agua-palido.png">
+                        <div class="aspect-square bg-[#9ad1cb] rounded-xl border border-white/20 cursor-pointer shadow-inner hover:scale-105 transition-transform"
+                            data-image="img/verde-agua-palido.png">
                         </div>
-                        <div
-                            class="aspect-square bg-[#eaf1ff] rounded-xl border border-white/20 cursor-pointer shadow-inner hover:scale-105 transition-transform" data-image="img/blanco-brillante.png">
+                        <div class="aspect-square bg-[#eaf1ff] rounded-xl border border-white/20 cursor-pointer shadow-inner hover:scale-105 transition-transform"
+                            data-image="img/blanco-brillante.png">
                         </div>
                     </div>
                 </div>
@@ -350,7 +360,7 @@
                     <img id="mainimage" class="rounded-2xl shadow-2xl"
                         data-alt="An artistic view of a modern corner featuring a chair in front of a wall painted with two contrasting colors: a soft cream and a deep, muted teal. The composition is perfectly balanced, with soft light creating a gentle gradient on the painted surfaces. It evokes a sense of calm and demonstrates how Lumina Paints can define a room's atmosphere with premium architectural precision."
                         src="img/verde-oscuro.jpg" />
-                        
+
                 </div>
             </div>
         </div>
@@ -361,7 +371,7 @@
             <div class="space-y-sm">
 
                 <p class="font-epilogue text-sm leading-relaxed text-gray-500 max-w-xs">
-                    © 2026 COMBO PINTURA.
+                    © 2026 BENJAMIN MOLINA Y GONZALO FOGOLIN
                 </p>
             </div>
             <div class="flex flex-col gap-xs">
@@ -405,7 +415,7 @@
             </path>
         </svg>
     </a>
-   <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
- 
+
 </html>
